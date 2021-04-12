@@ -15,12 +15,14 @@ contract Product {
     }
 
     modifier onlyWhileNotPaid{
-        require(currentStatus == Statuses.NotPaid, "Impossible to proceed.");
+        require(currentStatus == Statuses.NotPaid,
+        "Impossible to proceed.");
         _;
     }
 
     modifier costs(uint _amount) {
-        require(msg.value = _amount, "Not enough currency provided.");
+        require(msg.value = _amount,
+        "Not enough currency provided.");
         _;
     }
 
