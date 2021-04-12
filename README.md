@@ -1,4 +1,5 @@
 # Smart-Contract-1-
+Using as base tutorial >>>
 
 Smart Contract focused in the transaction of a single product.
 
